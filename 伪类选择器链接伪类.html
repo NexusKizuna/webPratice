@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 可以给链接添加特殊效果，或选择第一个，第N个元素 -->
+    <style>
+        /*
+        a:link {
+            //:link是为访问过的链接
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            //:visited是访问过的链接
+            color: blue;
+        }
+
+        a:hover {
+            //:hover是选择鼠标经过的链接
+            color: skyblue;
+        }
+
+        a:active {
+            //:active是鼠标点击中的链接
+            color: green;
+        }
+        */
+        /* 写链接伪类的时候尽量按照link visited hover active的顺序书写以防伪类无法正常执行 */
+        /* 链接（a标签）是需要单独指定样式的 */
+        /* 实际开发的时候lvha不需要都写上 */
+        /* 开发中一般如此定义： */
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: skyblue;
+            /* text-decoration: underline; */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a><br />
+    <a href="http://www.bilibili.com" target="_blank">b站</a>
+    <a href="http://www.baidu.com" target="_blank">new</a>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 220px;
+            height: 90px;
+            background-color: pink;
+        }
+
+        #one {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            float: left;
+        }
+
+        #two {
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            float: left;
+        }
+
+        #three {
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            浮动会脱离文档流（标准流）并且移动到制定的位置（俗称脱标）<br />
+            浮动的盒子不再保留原来的位置，其位置又其他标准流所占有
+        </p>
+    </div>
+    <div class="box">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+</body>
+
+</html>

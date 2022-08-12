@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 行内块元素之间会留下空隙，但实际开发中留白的像素会严格控制甚至不留白 */
+            /* display: inline-block; */
+            /* 两个盒子分别左右对齐，标准流很难实现 */
+            margin: 100px 20px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 20px;
+            transition: margin .5s, width .5s, height .5s;
+
+        }
+
+        div:hover {
+            width: 220px;
+            height: 220px;
+            margin-top: 90px;
+            /* border-radius: 50%; */
+            margin-left: 10px;
+            margin-right: 10px;
+            /* line-height: 220px; */
+            /* box-shadow: 0px 15px 10px 5px rgba(0, 0, 0, .35); */
+            transition: margin-top .5s, width .5s, height .5s, margin-left .5s, margin-right .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 网页布局的第一准则：网页纵向排列用标准流，多个块级元素横向排列用浮动 -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</body>
+
+</html>

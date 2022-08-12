@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+            margin-top: 30px;
+            /* border: 1px solid transparent; */
+            /* padding-top: 1px; */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 90px 0px 0px 20px;
+        }
+
+        /* 子元素定义上外边距的时候，会出现父元素塌陷问题 */
+        /* 这时父元素和子元素的上外边距取自最大的上外边距 */
+        /* 解决方案一： 为父元素定义一个外边框 eg: border: 1px solid transparent; (1像素的透明边框) */
+        /* 解决方案二： 为父元素定义上内边距 eg: padding-top: 1px; */
+        /* 解决方案三： 可以为父元素添加overflow: hidden; */
+        /* 其他解决方案： 如浮动，固定，绝对定位的盒子不会有塌陷问题 */
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

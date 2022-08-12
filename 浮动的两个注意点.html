@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>1.浮动和标准流的父盒子搭配</h2>
+    <p class="red">先用标准流的父元素排列上下位置，之后内部子元素采取浮动排流左右位置。</p>
+    <h2>2.一个父元素内的某个子元素浮动，则其他元素都应该浮动</h2>
+    <p>一个盒子里有多个子盒子，如果其中一个盒子浮动了，那么其他兄弟也应该浮动，以防止引起问题。</p>
+    <p class="red">浮动的盒子只会影响浮动盒子后面的标准流，不会影响前面的标准流</p>
+</body>
+
+</html>

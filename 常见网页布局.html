@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见网页布局</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .box {
+            width: 700px;
+            height: 600px;
+            background-color: white;
+            border: 3px solid rgba(0, 0, 0, .4);
+            margin: 100px auto;
+        }
+
+        .box .top {
+            margin: 10px;
+            width: 676px;
+            height: 36px;
+            border: 2px dashed silver;
+            line-height: 40px;
+            color: silver;
+            background-color: lavender;
+            text-align: center;
+        }
+
+        .box .banner {
+            margin: 10px 100px;
+            width: 496px;
+            height: 96px;
+            line-height: 100px;
+            color: silver;
+            background-color: lavender;
+            text-align: center;
+            border: 2px dashed silver;
+        }
+
+        .box .main {
+            margin: 10px 100px;
+            width: 500px;
+            height: 280px;
+            /* background-color: pink; */
+        }
+
+        .box .row1 {
+            width: 500px;
+            height: 80px;
+        }
+
+        .box .tag1,
+        .box .lasttag1 {
+            width: 118px;
+            height: 76px;
+            float: left;
+            margin-right: 4px;
+            background-color: lavender;
+            border: 2px dashed silver;
+        }
+
+        .box .lasttag1 {
+            margin-right: 0px;
+        }
+
+        .box .row2 {
+            width: 500px;
+            height: 200px;
+        }
+
+        .box .tag2,
+        .box .lasttag2 {
+            float: left;
+            width: 118px;
+            height: 190px;
+            margin-top: 10px;
+            margin-right: 4px;
+            border: 2px dashed silver;
+            background-color: lavender;
+        }
+
+        .box .lasttag2 {
+            margin-right: 0px;
+        }
+
+        .box .footer {
+            width: 676px;
+            height: 126px;
+            margin: 10px;
+            background-color: lavender;
+            color: silver;
+            line-height: 120px;
+            text-align: center;
+            border: 2px dashed silver;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">top</div>
+        <div class="banner">banner</div>
+        <div class="main">
+            <div class="row1">
+                <div class="tag1"></div>
+                <div class="tag1"></div>
+                <div class="tag1"></div>
+                <div class="lasttag1"></div>
+            </div>
+            <div class="row2">
+                <div class="tag2"></div>
+                <div class="tag2"></div>
+                <div class="tag2"></div>
+                <div class="lasttag2"></div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

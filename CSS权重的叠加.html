@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 0,0,0,1+0,0,0,1=0,0,0,10>0,0,0,1 权重虽然会叠加，但是永远不会有进位的问题 */
+        ul li {
+            color: green;
+        }
+
+        li {
+            color: red;
+        }
+
+        /* .nav ul li 的叠加是0,0,1,10 */
+        /* a:hover 的权重叠加是0,0,1,1 */
+        /* .nav a 的权重叠加是0,0,1,1 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>你好</li>
+    </ul>
+</body>
+
+</html>

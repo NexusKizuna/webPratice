@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除浮动的本质是清除浮动元素造成的影响 */
+        /* 如果父盒子本身有高度，则不需要清除浮动 */
+        /* 清除浮动之后， 父级就会根据浮动的子盒子自动检测高度，父级有了高度，就不会影响下面的标准流了 */
+        /* 清除浮动本质是闭合浮动 */
+        /* 主要的清除浮动的方法有三种 */
+        /* 1.额外标签法也称为隔墙法，是W3C推荐的做法 */
+        /* 2.父级添加overflow属性 */
+        /* 3.父级添加after伪元素 */
+        /* 4.父级添加双伪元素 */
+        .clearboth {
+            clear: both;
+        }
+
+        .box {
+            border: 1px solid skyblue;
+        }
+
+        .damao {
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color: pink;
+        }
+
+        .ermao {
+            width: 103px;
+            height: 299px;
+            float: left;
+            background-color: purple;
+        }
+
+        /* 优点：通俗易懂，书写方便
+        缺点：添加许多无意义的标签，结构化较差 */
+        /* 注意 添加的隔墙元素必须是块级元素，不能是行内元素！！！ */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+        <div class="clearboth"></div>
+    </div>
+</body>
+
+</html>

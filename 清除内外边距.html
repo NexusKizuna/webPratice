@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        span {
+            padding: 20px;
+            margin: 30px;
+            /* 上下内外边距不起效果 */
+        }
+
+        /* 这句话也是我们css的第一行代码 */
+        /* 注意！ 行捏元素为了照顾兼容性，尽量只设置左右内外边距，不要设置上下内外边距，但是转换为块级元素和行内块元素就可以了 */
+    </style>
+</head>
+
+<body>
+    123
+    <ul>
+        <li>abcd</li>
+    </ul>
+    <span>
+        行内元素尽量只设置左右的内外边距
+    </span>
+</body>
+
+</html>

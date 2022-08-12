@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            display: block;
+            /* 行内元素转换为块元素的代码 */
+            width: 200px;
+            height: 300px;
+            background-color: red;
+            color: #333;
+            text-decoration: none;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            display: inline;
+            /* 转换为行内元素 */
+        }
+
+        span {
+            width: 100px;
+            height: 300px;
+            background-color: skyblue;
+            display: inline-block;
+            /* 转换为行内块元素  */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">金星</a>
+    <div>你好</div>
+    <div>你好</div>
+    <div>你好</div>
+    <span>好的</span>
+</body>
+
+</html>

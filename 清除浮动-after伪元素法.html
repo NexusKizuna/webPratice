@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* after伪元素是额外标签法的升级版 此CSS会在父盒子末尾添加了一个含clear:both属性的子盒子 */
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .box {
+            width: 800px;
+            border: 1px solid skyblue;
+        }
+
+        .damao {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+        }
+
+        .ermao {
+            float: left;
+            width: 93px;
+            height: 192px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+    </div>
+</body>
+
+</html>

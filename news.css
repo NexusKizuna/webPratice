@@ -1,0 +1,45 @@
+body {
+    font: 16px/28px "Microsoft YaHei UI"
+}
+
+h1 {
+    font-weight: 400;
+}
+.header {
+    text-align: center;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    color: #888888;
+    font-size: 12px;
+}
+
+.search {
+    width: 170px;
+    color: #666666;
+}
+
+button {
+    font-weight: 700;
+}
+
+.content {
+    text-indent: 2em;
+}
+
+.image {
+    text-align: center;
+}
+
+.message {
+    color: #888888;
+    font-size: 8px;
+}

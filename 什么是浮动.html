@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 2em;
+            background-color: skyblue;
+            margin: 30px auto;
+        }
+
+        span {
+            color: red;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid silver;
+            border-collapse: collapse;
+        }
+
+        #two {
+            background-color: #DEDEDE;
+        }
+
+        .box,
+        .qinglong,
+        .baihu {
+            padding: 0px;
+            margin: 0px;
+            background-color: transparent;
+        }
+
+        .box {
+            width: 800px;
+            height: 800px;
+            border: 1px solid pink;
+        }
+
+        .qinglong,
+        .baihu {
+            width: 200px;
+            height: 200px;
+        }
+
+        .qinglong {
+            float: left;
+            background-color: green;
+            color: white;
+        }
+
+        .baihu {
+            float: right;
+            background-color: snow;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <span>float</span>属性用于创建浮动框，将其移动到一边，直到左边缘或右边缘触及包含块或另一个浮动框的边缘。
+    </p>
+    <p>
+        语法：
+    </p>
+    <div>
+        <p>选择器 {float: 属性值；}</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h3>属性值</h3>
+                </th>
+                <th>
+                    <h3>描述</h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p><strong>none</strong></p>
+                </td>
+                <td>
+                    <p>元素不浮动（<strong>默认值</strong>）</p>
+                </td>
+            </tr>
+            <tr id="two">
+                <td>
+                    <p><strong>left</strong></p>
+                </td>
+                <td>
+                    <p>元素向<strong>左</strong>浮动</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>right</strong></p>
+                </td>
+                <td>
+                    <p>元素向<strong>右</strong>浮动</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="box">
+        <div class="qinglong">青龙</div>
+        <div class="baihu">白虎</div>
+    </div>
+</body>
+
+</html>

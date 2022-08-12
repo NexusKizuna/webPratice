@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .box {
+            width: 1160px;
+            height: 630px;
+            background-color: #EEE;
+            margin: 50px auto;
+        }
+
+        .box .bigtag {
+            float: left;
+            width: 220px;
+            height: 610px;
+            margin: 10px;
+            margin-right: 0px;
+            transition: box-shadow 300ms;
+        }
+
+        .box .bigtag:hover {
+            box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, .25);
+            transition: box-shadow 300ms;
+        }
+
+        .box .smallbox {
+            float: left;
+            /* margin-left: 10px; */
+            width: 930px;
+            height: 630px;
+            /* background-color: pink; */
+        }
+
+        .box .nav1,
+        .box .nav2 {
+            width: 930px;
+            height: 310px;
+        }
+
+        .box .tag {
+            margin: 10px 0px 0px 10px;
+            width: 220px;
+            height: 300px;
+            float: left;
+            background-color: white;
+            transition: margin 300ms;
+        }
+
+        .box .tag:hover {
+            margin: 5px 0px 0px 10px;
+            transition: margin 300ms;
+            box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, .25);
+        }
+
+        .box .bigimage {
+            width: 220px;
+            height: 610px;
+            transition: width 300ms, height 300ms;
+        }
+
+        .box .pic {
+            width: 220px;
+            height: 180px;
+        }
+
+        .box .title,
+        .box .info,
+        .box .price {
+            text-align: center;
+        }
+
+        .box .title {
+            font: 14px/20px "Microsoft Yahei";
+            margin-top: 30px;
+        }
+
+        .box .info {
+            font: 12px/20px "Microsoft Yahei";
+            color: #DDD;
+        }
+
+        .box .price {
+            font: 13px/32px "Microsoft Yahei";
+            color: orange;
+        }
+
+        .box .price span {
+            font-size: 12px;
+            color: #DDD;
+            text-decoration: line-through;
+        }
+
+        .box>.title>a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="bigtag">
+            <a href="#">
+                <img class="bigimage" src="图片.jpg" alt="tupian" />
+            </a>
+        </div>
+        <div class="smallbox">
+            <div class="nav1">
+                <div class="tag">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            Redmi K20 Pro 6GB+128GB
+                        </a>
+                    </p>
+                    <p class="info">
+                        骁龙855，弹出全面屏
+                    </p>
+                    <p class="price">
+                        2299元&nbsp;<span>2599元</span>
+                    </p>
+                </div>
+                <div class="tag">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            Redmi Note 7
+                        </a>
+                    </p>
+                    <p class="info">
+                        4800万拍照千元机
+                    </p>
+                    <p class="price">
+                        1199元&nbsp;<span>1399元</span>
+                    </p>
+                </div>
+                <div class="tag">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            小米9 全网通版 6GB+128GB
+                        </a>
+                    </p>
+                    <p class="info">
+                        全面轻薄幻彩机身
+                    </p>
+                    <p class="price">
+                        2599元&nbsp;<span>2999元</span>
+                    </p>
+                </div>
+                <div class="tag" id="last1">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            小米MIX 3
+                        </a>
+                    </p>
+                    <p class="info">
+                        DxO百分拍照手机
+                    </p>
+                    <p class="price">
+                        2999元&nbsp;<span>3599元</span>
+                    </p>
+                </div>
+            </div>
+            <div class="nav2">
+                <div class="tag">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            小米CC9e
+                        </a>
+                    </p>
+                    <p class="info">
+                        3200万自拍，4800万三摄
+                    </p>
+                    <p class="price">
+                        1299元起
+                    </p>
+                </div>
+                <div class="tag">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            小米CC9
+                        </a>
+                    </p>
+                    <p class="info">
+                        3200万自拍，4800万三摄
+                    </p>
+                    <p class="price">
+                        1799元起
+                    </p>
+                </div>
+                <div class="tag">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            小米CC9 8GB+256GB 美图定制版
+                        </a>
+                    </p>
+                    <p class="info">
+                        8GB+256GB，100%美图相机
+                    </p>
+                    <p class="price">
+                        2599元
+                    </p>
+                </div>
+                <div class="tag" id="last2">
+                    <a href="#">
+                        <img class="pic" src="图片.jpg" alt="tupian" />
+                    </a>
+                    <p class="title">
+                        <a href="#">
+                            Redmi Note 7 Pro
+                        </a>
+                    </p>
+                    <p class="info">
+                        索尼4800万超清拍照
+                    </p>
+                    <p class="price">
+                        1399元&nbsp;<span>1599元</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 画出圆形的盒子 */
+        .yuan {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 100px; */
+            border-radius: 50%;
+            /* 这里的50%就是宽度和高度的一半 */
+        }
+
+        /* 画出圆角矩形 */
+        .juxing {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50px;
+        }
+
+        /* 画每个角都不同的圆角矩形 */
+        .butong {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /* border-radius: 10px 20px 30px 40px; */
+            border-radius: 10px 20px 30px;
+            /* 也可以写border-top-left-radius:10px这样控制的就是左上角了 */
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            圆的做法<br />
+            <div class="yuan"></div>
+        </li>
+        <li>
+            圆角矩形的做法<br />
+            <div class="juxing"></div>
+        </li>
+        <li>
+            可以设置不同的圆角<br />
+            <div class="butong"></div>
+        </li>
+    </ul>
+
+</body>
+
+</html>

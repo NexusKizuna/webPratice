@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: gray;
+            width: 500px;
+        }
+
+        .type1 {
+            background-color: red;
+            width: 20px;
+            height: 300px;
+        }
+
+        .type2 {
+            background-color: aqua;
+            width: 20px;
+            height: 100px;
+            ;
+        }
+
+        .type3 {
+            width: 20px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>h1~h6, p, div, ul, ol, li都是块元素</h1>
+    <p>其中div是经典的块元素</p>
+    <div>
+        块级元素特点：
+    </div>
+    <ol>
+        <li>块级元素比较霸道，自己独占一行</li>
+        <li>块级元素高度、宽度、外边框及内边距都可以控制</li>
+        <li>宽度默认是容器（父级宽度）的100%</li>
+        <li>是一个容器及盒子，里面可以放行内或者块级元素</li>
+    </ol>
+    <div>注意</div>
+    <ul>
+        <li>文字类的标签不允许放块级标签</li>
+        <li>&lt;p&gt;标签主要用于存放文字，因此&lt;p&gt;里面不能放块级元素，特别是不能放&lt;div&gt;</li>
+        <li>同理，&lt;h1&gt;~&lt;h6&gt;等都是文字类的块级标签，里面也不能放其他块级元素</li>
+    </ul>
+    <div class="type1">
+        <div class="type2"></div>
+        <div class="type3"></div>
+        <div class="type2"></div>
+    </div>
+</body>
+
+</html>

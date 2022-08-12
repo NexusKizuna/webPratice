@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        网页布局的本质-用CSS来摆放盒子，把盒子摆放到相应位置。<br />
+        CSS提供了三种传统的布局方式（简单说，就是盒子如何进行排列顺序）：
+    </p>
+    <ul>
+        <li>
+            普通流（标准流）
+        </li>
+        <li>
+            浮动
+        </li>
+        <li>
+            定位
+        </li>
+    </ul>
+
+    <h2>标准流（普通流/文档流）</h2>
+    <ol>
+        <li>
+            块级元素会独占一行，从上向下顺序排列。
+            <ul>
+                <li>
+                    常用元素: div、hr、p、h1~h6、ul、ol、dl、form、table
+                </li>
+            </ul>
+        </li>
+        <li>
+            行内元素会按照顺序，从左到右顺序排列，碰到父元素边缘则自动换行。
+            <ul>
+                <li>
+                    常用元素： span、a、i、em等
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>实际开发中，一个页面基本都包含了这三个布局方式（后面移动端会学习新的布局方式）</p>
+</body>
+
+</html>

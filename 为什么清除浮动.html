@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 不是所有的父盒子都有高度 */
+        /* 理想情况下不给父盒子高度，子盒子有多少，自动撑开父盒子 */
+        /* 解决方案1：:
+         * {
+            overflow: auto;
+        } */
+
+        .box {
+            border: 1px solid skyblue;
+        }
+
+        .damao {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            float: left;
+        }
+
+        .ermao {
+            width: 130px;
+            height: 230px;
+            background-color: pink;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+        <div class="clearfloat"></div>
+    </div>
+</body>
+
+</html>

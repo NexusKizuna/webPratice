@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #F5F5F5;
+        }
+
+        .box {
+            display: block;
+            width: 298px;
+            height: 415px;
+            background-color: white;
+            margin: 100px auto;
+            float: none;
+            transition: margin 400ms;
+        }
+
+        .box:hover {
+            box-shadow: #b0b0b0 0px 15px 20px 10px;
+            margin-top: 95px;
+            transition: margin-top 200ms, box-shadow 200ms;
+        }
+
+        .box img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            padding: 0px 0px auto;
+        }
+
+        .box .review {
+            display: block;
+            height: 70px;
+            padding: 0px 28px;
+            margin-top: 20px;
+            font: 14px "Mircosoft YaHei UI";
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .box .apprasie {
+            display: block;
+            height: 20px;
+            padding: 0px 28px;
+            margin: 60px 0px 0px;
+            color: #b0b0b0;
+            font: 12px "Microsoft YaHei UI";
+            text-align: left;
+            text-indent: 0em;
+        }
+
+        .box .info {
+            height: 30px;
+            padding: 0px 28px;
+            margin-top: 10px;
+            text-align: left;
+            text-indent: 0em;
+            font: 12px "Microsoft YaHei UI";
+        }
+
+        .box .name {
+            display: inline-block;
+            width: 170px;
+            color: #555;
+            font-weight: 400;
+            /* border-right: 2px solid #DEDEDE; */
+        }
+
+        .info em {
+            font-style: normal;
+            color: #DEDEDE;
+            margin: 0px 6px 0px 15px;
+        }
+
+        .box .jiage {
+            display: inline-block;
+            /* width: 47px; */
+            color: #FF6700;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#"><img src="图片.jpg"></a>
+        <h3 class="review"><a href="#">托瓦兹军事学院特科班VII班和黎恩传奇故事的开始</a></h3>
+        <div class="apprasie">来自于1145140的评论</div>
+        <div class="info">
+            <h4 class="name"><a href="#">英雄传说：闪之轨迹</a></h4>
+            <em>|</em>
+            <span class="jiage">249元</span>
+        </div>
+    </div>
+</body>
+
+</html>
