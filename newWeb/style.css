@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    overflow: hidden;
+    overflow: visible;
     background-color: #f3f5f7;
 }
 
@@ -31,12 +31,20 @@ body {
     width: 100%;
     height: 100px;
     background-color: white;
+    position: relative;
+}
+
+.header .headerbox_position {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
 }
 
 .header #logolink {
     display: block;
     float: left;
-    margin: 27px 70px 27px 360px;
+    margin: 27px 70px 27px 0px;
 }
 
 .header .headtag {
@@ -62,8 +70,17 @@ body {
     width: 360px;
     height: 38px;
     margin: 30px 0px 30px 87px;
+    color: #bfbfbf;
+    font: 14px "Microsoft Yahei";
+    text-indent: 2em;
     border: 1px solid #00a4ff;
     border-right: 0px;
+}
+
+.header #search:focus {
+    text-indent: 0em;
+    color: black;
+    initial-value: "";
 }
 
 .header #searchbutton {
@@ -101,21 +118,29 @@ body {
 /* nav部分 */
 
 .nav {
-    width: 1920px;
+    width: 100%;
     height: 420px;
     background-color: #033db2;
+    position: relative;
 }
 
-.nav .backbox {
+.navbox_position {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+}
+
+.nav .backimage {
+    display: block;
     width: 1200px;
     height: 420px;
-    margin: 0px 360px;
-    background-image: url(images/banner2.png);
-
 }
 
-.backbox .navlist {
-    float: left;
+.navlist {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 190px;
     height: 360px;
     padding: 30px 0px;
@@ -148,8 +173,11 @@ body {
 
 .nav .floatpoint {
     display: block;
-    float: left;
-    margin: 350px 325px 50px 305px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -105px;
+    /* margin: 350px 325px 50px 305px; */
     width: 150px;
     background-color: transparent;
 }
@@ -174,8 +202,9 @@ body {
 }
 
 .nav .classtable {
-    float: left;
-    margin: 60px 0px;
+    position: absolute;
+    right: 0;
+    top: 60px;
     width: 230px;
     height: 300px;
     background-color: white;
@@ -238,12 +267,22 @@ body {
 /* bar部分 */
 .bar {
     display: block;
-    width: 1200px;
+    position: relative;
+    width: 100%;
     height: 60px;
-    margin: 8px 360px 0px 360px;
+    margin-top: 8px;
+}
+
+.barbox_position {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -600px;
+    width: 1200px;
     background-color: white;
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, .25);
 }
+
 
 .bartag {
     display: block;
@@ -262,7 +301,6 @@ body {
     border-width: 0;
 }
 
-
 .bar .changehobby {
     display: block;
     float: right;
@@ -278,3 +316,318 @@ body {
 }
 
 /* bar部分 */
+
+/* content部分 */
+/*  box1是第一种类型布局
+    box2是第二种类型布局 */
+.content {
+    width: 100%;
+    position: relative;
+}
+
+.content .sidebar {
+    position: absolute;
+    left: 50%;
+    top: 390px;
+    margin-left: -800px;
+    width: 184px;
+    height: 426px;
+    background-color: white;
+}
+
+.sidebar .sidebarlist {
+    list-style-type: none;
+    padding: 28px 0px 28px 30px;
+}
+
+.sidebar .titletext {
+    font: 14px/20px "Microsoft Yahei";
+    margin-bottom: 15px;
+}
+
+.sidebar .lastTitleText {
+    margin-bottom: 0px;
+}
+
+.sidebar .titlejump:hover {
+    color: #66bcfd;
+}
+
+.content .mainbar {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content .box1,
+.content .box2,
+.content .box3 {
+    width: 1200px;
+    height: 600px;
+    margin-top: 30px;
+}
+
+.content .box2 {
+    height: 442px;
+}
+
+.content .box3 {
+    height: 320px;
+}
+
+.content .boxtitle {
+    font: 22px/30px "Microsoft Yahei";
+    font-weight: 400;
+}
+
+.content .boxtag {
+    display: block;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: white;
+    transition: margin-top 400ms, box-shadow 400ms;
+    position: relative;
+}
+
+.box2 .boxtag {
+    margin-top: 22px;
+}
+
+.box3 .boxtag {
+    margin-top: 20px;
+}
+
+.box1 .boxtag:hover {
+    margin-top: 10px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .25);
+    transition: margin-top 400m, box-shadow 400ms;
+}
+
+.box2 .boxtag:hover {
+    margin-top: 17px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .25);
+    transition: margin-top 400m, box-shadow 400ms;
+}
+
+.box3 .boxtag:hover {
+    margin-top: 15px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .25);
+    transition: margin-top 400m, box-shadow 400ms;
+}
+
+.content .boxlasttag {
+    margin-right: 0px;
+}
+
+.hot {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
+
+.new {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
+
+.hot:hover,
+.new:hover {
+    cursor: pointer;
+}
+
+.content .box_course_img {
+    display: block;
+    width: 228px;
+    height: 155px;
+}
+
+.content .boxcourselink_text {
+    display: block;
+    overflow: hidden;
+    height: 42px;
+    margin: 22px 18px 0px 18px;
+    font: 16px "Microsoft Yahei";
+}
+
+.content .info {
+    display: block;
+    margin: 15px 18px 0px 18px;
+}
+
+.content .classtype {
+    color: #ff7c2d;
+    font: 14px/20px "Microsoft Yahei";
+}
+
+.content .point {
+    font-weight: 900;
+    font: 15px/20px "Microsoft Yahei";
+    color: #999999;
+}
+
+.content .member {
+    color: #999999;
+    font: 13px/20px "Microsoft Yahei";
+}
+
+.box2 .titlebar,
+.box3 .titlebar {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+
+.box3 .titlebar {
+    margin: 0px;
+}
+
+.content .titlefloat {
+    float: left;
+}
+
+.box2 .selectlevel,
+.box3 .selectlevel {
+    display: block;
+    float: right;
+    margin-right: 340px;
+}
+
+.box2 .selectoption,
+.box3 .selectoption {
+    float: left;
+    margin-right: 70px;
+}
+
+.box2 .optionlink,
+.box3 .optionlink {
+    font: 16px/30px "Microsoft Yahei";
+    color: #868686;
+    line-height: 30px;
+}
+
+.box2 .optionlink:hover,
+.box3 .optionlink:hover {
+    color: #66bcfd;
+}
+
+.box2 .lastoption,
+.box3 .lastoption {
+    margin-right: 0px;
+}
+
+.box2 .checkall,
+.box3 .checkall {
+    display: block;
+    float: right;
+    margin-right: 30px;
+}
+
+.box2 .checkalllink,
+.box3 .checkalllink {
+    font: 12px/30px "Microsoft Yahei";
+    color: #a5a5a5;
+    line-height: 30px;
+}
+
+.box2 .checkalllink:hover,
+.box3 .checkalllink:hover {
+    color: #66bcfd;
+}
+
+.box2 .box2subtag {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    height: 392px;
+    width: 228px;
+}
+
+.box2 .box2maintag {
+    display: block;
+    float: left;
+    width: 957px;
+    height: 392px;
+}
+
+.box2 .box2sublink {
+    width: 228px;
+    height: 392px;
+}
+
+.box2 .box2row1 {
+    width: 957px;
+    height: 100px;
+}
+
+/* content部分 */
+
+/* footer部分 */
+.footer {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: 420px;
+    background-color: white;
+}
+
+.footerbox_position {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.footer .logo {
+    margin-bottom: 25px;
+}
+
+.footer .companyinformation {
+    margin-bottom: 15px;
+}
+
+.footer .companyinfo {
+    float: left;
+    width: 660px;
+    margin-top: 32px;
+}
+
+.footer .infotext {
+    font: 14px/18px "Microsoft Yahei";
+    color: #666666;
+}
+
+.footer .downloadApp {
+    width: 116px;
+    height: 32px;
+    border: 2px solid #00a4ff;
+    text-align: center;
+}
+
+.footer .downloadlink {
+    font: 16px/32px "Microsoft Yahei";
+    color: #00a4ff;
+}
+
+.footer .hyperlink {
+    float: left;
+    margin-top: 32px;
+}
+
+.footer .footerbox {
+    float: left;
+    width: 226px;
+}
+
+.footer .footerListTitle {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer .footerlist {
+    list-style-type: none;
+}
+
+/* footer部分 */
