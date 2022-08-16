@@ -322,14 +322,21 @@ body {
     box2是第二种类型布局 */
 .content {
     width: 100%;
+    height: 2274px;
     position: relative;
 }
 
-.content .sidebar {
+.contentbox_position {
     position: absolute;
     left: 50%;
-    top: 390px;
+    width: 1400px;
     margin-left: -800px;
+}
+
+.content .sidebar {
+    position: sticky;
+    top: 20%;
+    float: left;
     width: 184px;
     height: 426px;
     background-color: white;
@@ -354,8 +361,9 @@ body {
 }
 
 .content .mainbar {
+    float: left;
     width: 1200px;
-    margin: 0 auto;
+    margin-left: 16px;
 }
 
 .content .box1,
